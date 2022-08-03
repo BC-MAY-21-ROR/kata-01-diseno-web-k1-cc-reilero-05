@@ -1,0 +1,50 @@
+/* Mixins */
+/* Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  text-align: center;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+.presentacion {
+  background-color: hsl(193deg, 100%, 96%);
+  color: hsl(192deg, 100%, 9%);
+  background-image: url("../images/bg-hero-mobile.svg");
+}
+.presentacion img {
+  width: 100%;
+}
+.presentacion .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+.presentacion .header .logo {
+  width: 24%;
+}
+.presentacion .header .btn-cta {
+  background-color: white;
+  box-shadow: 0 0 1px rgba(0, 37, 46, 0.25);
+  border-radius: 100vw;
+  padding: 0.5rem 1.5rem;
+  color: hsl(192deg, 100%, 9%);
+  font-weight: 700;
+  font-size: 0.75em;
+}
+.presentacion .title {
+  margin: 3rem auto;
+}/*# sourceMappingURL=main.css.map */

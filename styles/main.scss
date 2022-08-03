@@ -1,0 +1,65 @@
+@use 'sass:math';
+@import 'variables';
+
+/* Mixins */ 
+@mixin button($bg-color: $pink, $color: $light-cyan) {
+  background-color: $bg-color;
+  box-shadow: 0 0 1px rgba($color, .25);
+  border-radius: 100vw;
+  padding: 0.5rem 1.5rem;
+  color: $color;
+  font-weight: 700;
+}
+
+
+/* Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  text-align: center;
+}
+
+body {
+  font-family: $font-open;
+  font-size: $font-size
+}
+
+.presentacion {
+  background-color: $light-cyan;
+  color: $dark-cyan;
+  background-image: url('../images/bg-hero-mobile.svg');
+
+  img {
+    width: 100%;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+
+    .logo {
+      width: math.div(90px, 375px) * 100%;
+    }
+
+    .btn-cta {
+      @include button($bg-color: white, $color: $dark-cyan);
+      font-size: 0.75em;
+    }
+  }
+
+  .title {
+    margin: 3rem auto;
+  }
+}
+
