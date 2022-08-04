@@ -23,6 +23,10 @@ body {
   font-size: 18px;
 }
 
+ul {
+  list-style: none;
+}
+
 .intro {
   background-color: hsl(193deg, 100%, 96%);
   color: hsl(192deg, 100%, 9%);
@@ -40,7 +44,6 @@ body {
 }
 .intro .header .logo {
   width: 32%;
-  fill: #00252E;
 }
 .intro .header .btn-cta {
   background-color: white;
@@ -126,4 +129,53 @@ body {
 footer {
   background-color: hsl(192deg, 100%, 9%);
   color: white;
+  padding: 9rem 1rem 4rem 1rem;
+}
+footer .logo {
+  width: 45.3333333333%;
+  margin-bottom: 1.5rem;
+}
+footer li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+footer .icon {
+  width: 18px;
+  margin-right: 20px;
+}
+footer .location {
+  align-self: flex-start;
+  position: relative;
+  top: 5px;
+}
+footer a {
+  color: white;
+}
+footer .links {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+footer .links li {
+  margin-bottom: 1rem;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+footer .social li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid white;
+  border-radius: 100%;
+  font-size: 1rem;
+}
+footer .copyright {
+  font-size: 0.8rem;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

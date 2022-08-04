@@ -41,6 +41,10 @@ body {
   font-size: $font-size
 }
 
+ul {
+  list-style: none;
+}
+
 .intro {
   background-color: $light-cyan;
   color: $dark-cyan;
@@ -58,7 +62,7 @@ body {
 
     .logo {
       width: math.div(120px, 375px) * 100%;
-      fill: #00252E;
+      
     }
 
     .btn-cta {
@@ -143,4 +147,63 @@ body {
 footer{
   background-color: $dark-cyan;
   color: white;
+  padding: 9rem 1rem 4rem 1rem;
+  
+  .logo {
+    width: math.div(170px, 375px) * 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .icon {
+    width: 18px;
+    margin-right: 20px;
+  }
+
+  .location {
+    align-self: flex-start;
+    position: relative;
+    top: 5px;
+  }
+
+  a {
+    color: white;
+  }
+
+  .links {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      border: 1px solid white;
+      border-radius: 100%;
+      font-size: 1rem;
+    }
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+
 }
